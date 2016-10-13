@@ -139,7 +139,7 @@ func FilterAccess(username string, a *token.ResourceActions) {
 			if strings.Contains(permission, "M") {
 				a.Actions = append(a.Actions, "*")
 			}
-			if strings.Contains(permission, "R") || dao.IsProjectPublic(projectName) {
+			if strings.Contains(permission, "R") || (dao.IsProjectPublic(projectName) && username != "Anonymous") {
 				a.Actions = append(a.Actions, "pull")
 			}
 		}
