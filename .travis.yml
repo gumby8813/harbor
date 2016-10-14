@@ -93,4 +93,4 @@ script:
   - go run tests/userlogintest.go -name ${HARBOR_ADMIN} -passwd ${HARBOR_ADMIN_PASSWD}
 
 #  - sudo ./tests/testprepare.sh
-#  - go test -v ./tests/apitests
+#  - go test -v ./tests/apitests 
