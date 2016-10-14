@@ -5,7 +5,7 @@ language: go
 go: 
   - 1.6.2
 
-go_import_path: github.com/vmware/harbor
+go_import_path: github.com/gumby8813/harbor
 
 services: 
   - docker
