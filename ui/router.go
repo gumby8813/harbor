@@ -19,7 +19,7 @@ import (
 	"github.com/vmware/harbor/api"
 	"github.com/vmware/harbor/controllers"
 	"github.com/vmware/harbor/service"
-	"github.com/vmware/harbor/service/token"
+	"github.com/colemanserious/harbor/service/token"
 
 	"github.com/astaxie/beego"
 )
