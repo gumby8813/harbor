@@ -82,7 +82,7 @@ script:
   - echo $REGISTRY_URL
   - ./tests/pushimage.sh 
   - ./Deploy/coverage4gotest.sh
-  - goveralls -coverprofile=profile.cov -service=travis-ci
+#  - goveralls -coverprofile=profile.cov -service=travis-ci
 
   - docker-compose -f Deploy/docker-compose.test.yml down
   
