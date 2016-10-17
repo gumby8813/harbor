@@ -26,7 +26,7 @@ import (
 	"sync"
 	"time"
 
-	token_util "github.com/vmware/harbor/service/token"
+	token_util "github.com/colemanserious/harbor/service/token"
 	"github.com/vmware/harbor/utils/log"
 	"github.com/vmware/harbor/utils/registry"
 	registry_error "github.com/vmware/harbor/utils/registry/error"
