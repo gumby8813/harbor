@@ -5,7 +5,7 @@ language: go
 go: 
   - 1.6.2
 
-go_import_path: github.com/gumby8813/harbor
+go_import_path: github.com/vmware/harbor
 
 services: 
   - docker
@@ -31,6 +31,8 @@ env:
   SELF_REGISTRATION: "on"
 
 before_install:
+# Attempt to align source trees for forked code
+   - cp ../colemanserious ../vmware
    - sudo ./tests/hostcfg.sh
    - cd Deploy
    - sudo ./prepare
@@ -67,7 +69,6 @@ install:
   - go get github.com/stretchr/testify
   - go get golang.org/x/tools/cmd/cover
   - go get github.com/mattn/goveralls
-  - go get -d github.com/vmware/harbor
   
 before_script:
   # create tables and load data
