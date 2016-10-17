@@ -31,9 +31,6 @@ env:
   SELF_REGISTRATION: "on"
 
 before_install:
-# Attempt to align source trees for forked code
-   - eval "$PWD"
-   - cp ../colemanserious ../vmware
    - sudo ./tests/hostcfg.sh
    - cd Deploy
    - sudo ./prepare
