@@ -32,7 +32,7 @@ env:
 
 before_install:
 # Attempt to align source trees for forked code
-   - pwd
+   - echo `pwd`
    - cp ../colemanserious ../vmware
    - sudo ./tests/hostcfg.sh
    - cd Deploy
